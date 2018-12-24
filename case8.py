@@ -6,6 +6,23 @@ import pylab
 from matplotlib import mlab
 
 
+def _2():
+    currency = []
+    currency_e = []
+    date = []
+    day = 1
+    with open('euro1.txt') as f_in1:
+        for char in f_in1:
+            currency_e.append(float(char))
+    with open('usd9.txt') as f_in:
+        for item in f_in:
+            currency.append(float(item))
+            date.append(day)
+            day += 1
+    plt.plot(date, currency, currency_e)
+    plt.show()
+
+
 def _5():
     cy = []
     dat = []
@@ -40,14 +57,19 @@ def _8():
 
 def _9():
     currency = []
+    currency_e = []
     date = []
     day = 1
+    with open('euro1.txt') as f_in1:
+        for char in f_in1:
+            currency_e.append(float(char))
     with open('usd9.txt') as f_in:
         for item in f_in:
             currency.append(float(item))
             date.append(day)
             day += 1
     plt.plot(date, currency, marker='*')
+    plt.plot(date, currency_e, marker='o')
     plt.show()
 
 
