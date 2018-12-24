@@ -17,6 +17,7 @@ def _1():
     plt.plot(date, currency)
     plt.show()
 
+
 def _2():
     currency = []
     currency_e = []
@@ -32,6 +33,7 @@ def _2():
             day += 1
     plt.plot(date, currency, currency_e)
     plt.show()
+
 
 def _3():
     currency = []
@@ -85,8 +87,8 @@ def _4():
     plt.plot(date, currency_e)
     pylab.title('EURO')
     plt.grid(True)
-
     plt.show()
+
 
 def _5():
     cy = []
@@ -215,6 +217,7 @@ def _13():
     axes = Axes3D(fig)
     axes.plot_surface(xgrid, ygrid, zg, rstride=4, cstride=4, cmap=cm.jet)
     pylab.show()
+
 
 n = int(input('Choose:'))
 if n == 1:
