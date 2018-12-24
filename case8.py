@@ -36,20 +36,6 @@ def _2():
     plt.show()
 
 
-def _5():
-    cy = []
-    dat = []
-    day = 1
-    with open('usd9.txt') as f_in:
-        for item in f_in:
-            cy.append(float(item))
-            dat.append(day)
-            day += 1
-    plt.subplot(111, polar=True)
-    plt.plot(dat, cy, lw=2)
-    plt.show()
-
-
 def _8():
     currency = []
     date = []
