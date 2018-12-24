@@ -109,5 +109,3 @@ def _10():
         pylab.pause(0.01)
 
     pylab.close()
-
-_2()
