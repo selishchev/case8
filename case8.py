@@ -5,6 +5,17 @@ import math
 import pylab
 from matplotlib import mlab
 
+def _1():
+    cy = []
+    dat = []
+    day = 1
+    with open('usd.txt') as f:
+        for item in f:
+            cy.append(float(item))
+            dat.append(day)
+            day+=1
+    plt.plot(day, cy)
+    plt.show()
 
 def _5():
     cy = []
