@@ -5,6 +5,7 @@ import math
 import pylab
 from matplotlib import mlab
 
+
 def _1():
     cy = []
     dat = []
@@ -16,6 +17,7 @@ def _1():
             day += 1
     plt.plot(day, cy)
     plt.show()
+
 
 def _2():
     currency = []
