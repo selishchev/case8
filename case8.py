@@ -20,6 +20,24 @@ def _5():
     plt.show()
 
 
+def _8():
+    currency = []
+    date = []
+    day = 1
+    with open('usd9.txt') as f_in:
+        for item in f_in:
+            currency.append(float(item))
+            date.append(day)
+            day += 1
+    plt.title('USD-Rubles in 2018')
+    plt.xlabel('Days')
+    plt.ylabel('Rubles for USD')
+    plt.plot(date, currency)
+    plt.axis([0, 250, 55, 72])
+    plt.grid(True)
+    plt.show()
+
+
 def _9():
     currency = []
     date = []
