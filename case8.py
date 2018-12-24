@@ -9,11 +9,11 @@ def _1():
     cy = []
     dat = []
     day = 1
-    with open('usd.txt') as f:
+    with open('usd9.txt') as f:
         for item in f:
             cy.append(float(item))
             dat.append(day)
-            day+=1
+            day += 1
     plt.plot(day, cy)
     plt.show()
 
@@ -87,3 +87,5 @@ def _10():
         pylab.pause(0.01)
 
     pylab.close()
+
+_1()
